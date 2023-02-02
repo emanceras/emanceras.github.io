@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eduardo Manceras Fernández</title>
+    <style>
+        body,
+html {
+    height: 100%;
+    margin: 0;
+    font: 400 15px/1.8 "Lato", sans-serif;
+    color: #777;
+}
+
+.bgimg-1,
+.bgimg-2,
+.bgimg-3 {
+    position: relative;
+    opacity: 10;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bgimg-1 {
+    background-image: url("https://github.com/emanceras/images-website/blob/main/DSC01325.jpg?raw=true");
+    min-height: 100%;
+}
+
+.bgimg-2 {
+    background-image: url("https://github.com/emanceras/images-website/blob/main/DSC00993.jpg?raw=true");
+    min-height: 400px;
+}
+
+.bgimg-3 {
+    background-image: url("https://github.com/emanceras/images-website/blob/main/pruebaimg.jpg?raw=true");
+    min-height: 100%;
+    object-fit: cover;
+}
+
+.caption {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: #000;
+}
+
+.caption span.border {
+    background-color: #111;
+    color: #fff;
+    padding: 18px;
+    font-size: 25px;
+    letter-spacing: 10px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+.arrow {
+    margin-top: 15vh;
+    position: absolute;
+    width: 2.1rem;
+    height: 0.48rem;
+    opacity: 0;
+    transform: scale(0.3);
+    animation: move-arrow 3s ease-out infinite;
+}
+.arrow:first-child {
+    animation: move-arrow 3s ease-out 1s infinite;
+}
+.arrow:nth-child(2) {
+    animation: move-arrow 3s ease-out 2s infinite;
+}
+.arrow:before, .arrow:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 50%;
+    background: #2c3e50;
+}
+.arrow:before {
+    left: 0;
+    transform: skewY(30deg);
+}
+.arrow:after {
+    right: 0;
+    width: 50%;
+    transform: skewY(-30deg);
+}
+@keyframes move-arrow {
+    25% {
+        opacity: 1;
+    }
+    33.3% {
+        opacity: 1;
+        transform: translateY(2.28rem);
+    }
+    66.6% {
+        opacity: 1;
+        transform: translateY(3.12rem);
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(4.8rem) scale(0.5);
+    }
+}
+
+.aboutme {
+    color: rgb(0, 0, 0);
+    background-color: rgba(18, 16, 16, 0.427);
+    text-align: center;
+    padding: 50px 80px;
+    text-align: center;
+}
+
+.imageaboutme {
+    border-radius: 10vh;
+}
+
+.p1 {
+    text-align: justify;
+}
+
+.edu {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    color: #ddd;
+    background-color: #282e34;
+    padding: 50px 80px;
+}
+
+.CM {
+    background-color: transparent;
+    font: 400 15px/1.8 "Lato", sans-serif;
+    font-size: 25px;
+    color: #f7f7f7;
+}
+
+h3 {
+    text-transform: uppercase;
+    font: 20px "Lato", sans-serif;
+    text-align: top;
+    color: #111;
+}
+
+footer {
+    max-height: 2px;
+}
+
+@media only screen and (max-device-width: 1024px) {
+    .bgimg-1,
+    .bgimg-2,
+    .bgimg-3 {
+    background-attachment: scroll;
+    }
+}
+
+.fo{
+    text-align: center;
+    padding: 20px;
+    color: #ddd;
+    background-color: #282e34;
+    margin: 0 auto;
+}
+
+.contact {
+    margin-top: 60px;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+}
+
+.imagelinkedin {
+    height: 10vh;
+    padding-top: 2vh;
+}
+
+.imagegithub {
+    margin-left: 1vw;
+    border-radius: 1vh;
+    height: 10vh;
+}
+
+/* stars */
+#form {
+    width: 250px;
+    margin: 0 auto;
+    height: 50px;
+}
+
+#form p {
+    text-align: center;
+}
+
+#form label {
+    font-size: 20px;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+label {
+    color: grey;
+}
+
+.clasificacion {
+    direction: rtl;
+    unicode-bidi: bidi-override;
+    margin: 20px;
+}
+    </style>
+
+</head>
+<body>
+    <body>
+        <div class="bgimg-1">
+            <div class="caption">
+                <span class="border">W E L C O M E</span>
+            </div>
+            <div class="container">
+                <div class="arrow"></div>
+                <div class="arrow"></div>
+                <div class="arrow"></div>
+            </div>
+        </div>
+        <div class="aboutme">
+            <img class="imageaboutme" src="https://github.com/emanceras/images-website/blob/main/yo.jpg?raw=true">
+            <h3>About me</h3>
+            <p class="p1">I was born in Málaga, Spain. I studied in the high school of my neighborhood and when I finished Bachillerato when I was seventeen, I decided to study in Madrid, at URJC the first year of Tourism degree. After that, I came back to Málaga where I followed studying the degree.
+                Afterwards, when I was twenty-one, I passed the entrance examination to the Army, belonging to “Anti-aircraft artillery”. I had to go to Cádiz and then to Zaragoza. After four years of hard work and far from my home, I decided to change it for what I really loved since I was a child: Technology.
+                Since then, I have not stopped to study and training myself for this world. Nowadays I have specialized in Big Data and IA, and furthermore as RPA Developer.
+                I am looking forward to continue learning and developing my knowledges, as part of this process at the end of the year, I will start the degree of Applied Data Science at UOC.
+                Finally, I want to say that a phrase which is referent for me in life is: “SIC PARVIS MAGNA” that means: “Greatness born from small beginnings”.
+                </p>
+        </div>
+        <!-- ----------------------------------------- -->
+        <div class="bgimg-2">
+            <div class="caption">
+                <span class="CM">SKILLS</span>
+            
+            </div>
+        </div>
+        <div class="edu">
+            <p class="clasificacion"><p>Java
+                <input id="radio1" type="radio" name="estrellas" value="5">
+                <label for="radio1">★</label>
+                <input id="radio2" type="radio" name="estrellas" value="4">
+                <label for="radio2">★</label>
+                <input id="radio3" type="radio" name="estrellas" value="3">
+                <label for="radio3">★</label>
+                <input id="radio4" type="radio" name="estrellas" value="2">
+                <label for="radio4">★</label>
+                </p>
+            </form></p></p></p>
+            <p class="clasificacion"><p>Python
+                <input id="radio1" type="radio" name="estrellas" value="5">
+                <label for="radio1">★</label>
+                <input id="radio2" type="radio" name="estrellas" value="4">
+                <label for="radio2">★</label>
+                <input id="radio3" type="radio" name="estrellas" value="3">
+                <label for="radio3">★</label>
+                <input id="radio4" type="radio" name="estrellas" value="2">
+                <label for="radio4">★</label>
+                </p>
+            </form></p></p></p>
+            <p class="clasificacion"><p>UIPath
+                <input id="radio1" type="radio" name="estrellas" value="5">
+                <label for="radio1">★</label>
+                <input id="radio2" type="radio" name="estrellas" value="4">
+                <label for="radio2">★</label>
+                <input id="radio3" type="radio" name="estrellas" value="3">
+                <label for="radio3">★</label>
+                <input id="radio4" type="radio" name="estrellas" value="2">
+                <label for="radio4">★</label>
+                </p>
+            </form></p></p></p>
+            <p class="clasificacion"><p>GIT
+                <input id="radio1" type="radio" name="estrellas" value="5">
+                <label for="radio1">★</label>
+                <input id="radio2" type="radio" name="estrellas" value="4">
+                <label for="radio2">★</label>
+                <input id="radio3" type="radio" name="estrellas" value="3">
+                <label for="radio3">★</label>
+                </p>
+            </form></p></p></p>
+            <p class="clasificacion"><p>HTML
+                <input id="radio1" type="radio" name="estrellas" value="5">
+                <label for="radio1">★</label>
+                <input id="radio2" type="radio" name="estrellas" value="4">
+                <label for="radio2">★</label>
+                <input id="radio3" type="radio" name="estrellas" value="3">
+                <label for="radio3">★</label>
+                </p>
+            </form></p></p></p>
+            <p class="clasificacion"><p>CSS
+                <input id="radio1" type="radio" name="estrellas" value="5">
+                <label for="radio1">★</label>
+                <input id="radio2" type="radio" name="estrellas" value="4">
+                <label for="radio2">★</label>
+                <input id="radio3" type="radio" name="estrellas" value="3">
+                <label for="radio3">★</label>
+                </p>
+            </form></p></p></p>
+            <p class="clasificacion"><p>JavaScript
+                <input id="radio1" type="radio" name="estrellas" value="5">
+                <label for="radio1">★</label>
+                <input id="radio2" type="radio" name="estrellas" value="4">
+                <label for="radio2">★</label>
+                </p>
+            </form></p></p></p>
+            <p class="clasificacion"><p>Bootstrap
+                <input id="radio1" type="radio" name="estrellas" value="5">
+                <label for="radio1">★</label>
+                <input id="radio2" type="radio" name="estrellas" value="4">
+                <label for="radio2">★</label>
+                </p>
+            </form></p></p></p>
+            <p class="clasificacion"><p>SASS
+                <input id="radio1" type="radio" name="estrellas" value="5">
+                <label for="radio1">★</label>
+                </p>
+            </form></p></p></p>
+            <p class="clasificacion"><p>Figma
+                <input id="radio1" type="radio" name="estrellas" value="5">
+                <label for="radio1">★</label>
+                </p>
+            </form></p></p></p>
+        </div>
+        <!-- ----------------------------------------- -->
+        <div class="bgimg-2">
+            <div class="caption">
+                <span class="CM">PORTFOLIO</span>
+            </div>
+        </div>
+        <div class="fo">
+            WORK IN PROGRESS
+        </div>
+        <!-- ----------------------------------------- -->
+        <div class="bgimg-3">
+            <div class="caption">
+                <span class="border">See you soon!
+            </div>
+            <div class="contact"><a href="https://www.linkedin.com/in/eduardo-manceras-fern%C3%A1ndez-903b00253/"><img class="imagelinkedin" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/LinkedIn_logo_initials.png/640px-LinkedIn_logo_initials.png"></img></a>
+                <a href="https://github.com/emanceras"><img class="imagegithub" src="https://allvectorlogo.com/img/2021/12/github-logo-vector.png"></a></span></div>         
+        </div>
+    </body>
+</body>
+</html>
