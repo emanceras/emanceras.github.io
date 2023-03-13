@@ -65,6 +65,7 @@ html {
     width: 100%;
     height: 100vh;
 }
+
 .arrow {
     margin-top: 15vh;
     position: absolute;
@@ -74,12 +75,15 @@ html {
     transform: scale(0.3);
     animation: move-arrow 3s ease-out infinite;
 }
+
 .arrow:first-child {
     animation: move-arrow 3s ease-out 1s infinite;
 }
+
 .arrow:nth-child(2) {
     animation: move-arrow 3s ease-out 2s infinite;
 }
+
 .arrow:before, .arrow:after {
     content: '';
     position: absolute;
@@ -88,15 +92,18 @@ html {
     width: 50%;
     background: #2c3e50;
 }
+
 .arrow:before {
     left: 0;
     transform: skewY(30deg);
 }
+
 .arrow:after {
     right: 0;
     width: 50%;
     transform: skewY(-30deg);
 }
+
 @keyframes move-arrow {
     25% {
         opacity: 1;
@@ -173,6 +180,7 @@ footer {
     color: #ddd;
     background-color: #282e34;
     margin: 0 auto;
+    height: 22vh;
 }
 
 .contact {
@@ -223,8 +231,33 @@ label {
     unicode-bidi: bidi-override;
     margin: 20px;
 }
-    </style>
 
+.grow {
+    padding: 5px 5px 5px 5px;
+    border-radius: 10px;
+    height: 10vh;
+    width: 22%;
+    margin: 5px 1% 5px 1%;
+    float: left;
+    position: relative;
+    transition: height 0.5s;
+    -webkit-transition: height 0.5s;
+    text-align: center;
+    overflow: hidden;
+    transition: 1.5s;
+    background-color: #282e34;
+}
+
+.grow:hover {
+    height: 40vh;
+    width: 50vw;
+}
+
+.npac {
+    text-align: center;
+    padding-top: 5vh;
+}
+    </style>
 </head>
 <body>
     <body>
@@ -314,7 +347,11 @@ label {
             </div>
         </div>
         <div class="fo">
-            WORK IN PROGRESS
+            <div class="grow">
+                <img class="mart" src="https://github.com/emanceras/images-website/blob/main/MART.png?raw=true">
+                <p>Mart is an application that compares products in different supermarkets.<br>Use UiPath for data collection and Java for the App.<br>Release date: Q3 2023.</p>
+            </div>
+            <p class="npac">New Projects are coming</p>
         </div>
         <!-- ----------------------------------------- -->
         <div class="bgimg-3">
